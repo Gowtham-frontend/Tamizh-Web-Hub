@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Tamil Web App | Professional Website Design &amp; Development</title>
+<meta name="description" content="Tamil Web App provides professional, responsive and SEO-friendly websites for businesses, startups and professionals. Build your digital presence today.">
+<meta name="keywords" content="website design tamil nadu, web development, business website, tamil web developer, affordable website design, whatsapp integration website">
+<meta name="author" content="Tamil Web App">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tamilwebapp.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tamil Web App | Professional Website Design & Development">
+<meta property="og:description" content="Modern, responsive & SEO-friendly websites for businesses, startups and professionals. Get your digital identity today.">
+<meta property="og:image" content="/assets/og-image.jpg">
+<meta property="og:url" content="https://tamilwebapp.com/">
+<meta property="og:locale" content="ta_IN">
+<meta property="og:site_name" content="Tamil Web App">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tamil Web App | Professional Website Design & Development">
+<meta name="twitter:description" content="Modern, responsive & SEO-friendly websites for businesses, startups and professionals.">
+<meta name="twitter:image" content="/assets/og-image.jpg">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Tamil Web App",
+  "image": "/assets/og-image.jpg",
+  "description": "Professional website design and development for small businesses, startups and professionals.",
+  "telephone": "+91-8668070454",
+  "email": "dgowtham429@gmail.com",
+  "areaServed": "IN",
+  "priceRange": "₹₹",
+  "url": "https://tamilwebapp.com/",
+  "sameAs": []
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪄</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Custom cursor ===== -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ===== Kolam grid canvas background (signature element) ===== -->
+<canvas id="kolam-bg" aria-hidden="true"></canvas>
+
+<!-- ===== Loader ===== -->
+<div class="loader" id="loader">
+  <div class="loader-mark">
+    <svg viewBox="0 0 64 64" class="loader-dot-grid">
+      <circle cx="8" cy="8" r="3"></circle><circle cx="32" cy="8" r="3"></circle><circle cx="56" cy="8" r="3"></circle>
+      <circle cx="8" cy="32" r="3"></circle><circle cx="32" cy="32" r="4"></circle><circle cx="56" cy="32" r="3"></circle>
+      <circle cx="8" cy="56" r="3"></circle><circle cx="32" cy="56" r="3"></circle><circle cx="56" cy="56" r="3"></circle>
+    </svg>
+  </div>
+  <p class="loader-text">TAMIL WEB APP</p>
+</div>
+
+<!-- ===== Navbar ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo" aria-label="Tamil Web App Home">
+      <span class="logo-mark">
+        <svg viewBox="0 0 40 40" width="34" height="34"><circle cx="8" cy="8" r="3" fill="currentColor"/><circle cx="20" cy="8" r="3" fill="currentColor" opacity=".6"/><circle cx="32" cy="8" r="3" fill="currentColor" opacity=".3"/><circle cx="8" cy="20" r="3" fill="currentColor" opacity=".6"/><circle cx="20" cy="20" r="4" fill="currentColor"/><circle cx="32" cy="20" r="3" fill="currentColor" opacity=".6"/><circle cx="8" cy="32" r="3" fill="currentColor" opacity=".3"/><circle cx="20" cy="32" r="3" fill="currentColor" opacity=".6"/><circle cx="32" cy="32" r="3" fill="currentColor"/></svg>
+      </span>
+      <span class="logo-text">Tamil<em>Web</em>App</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-cta magnetic">
+        <span>Start Your Project</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Mobile menu ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#portfolio" class="mobile-link">Portfolio</a>
+    <a href="#process" class="mobile-link">Process</a>
+    <a href="#reviews" class="mobile-link">Reviews</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <a href="tel:+918668070454" class="btn btn-outline">Call Now</a>
+    <a href="#" class="btn btn-cta" id="mobileWhatsapp">WhatsApp</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Website Design &amp; Development Studio</p>
+        <h1 class="hero-title">
+          உங்கள் Business-க்கு ஒரு <span class="text-outline">Website</span> மட்டும் இல்லை…<br>
+          ஒரு <span class="gradient-text">Digital Identity.</span>
+        </h1>
+        <p class="hero-sub">Tamil Web App மூலம் உங்கள் business-ஐ online-ல் professional-ஆக showcase செய்யும் modern, responsive &amp; SEO-friendly websites.</p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary magnetic">
+            <span>Get Your Website</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#portfolio" class="btn btn-ghost magnetic">
+            <span>View Our Work</span>
+          </a>
+        </div>
+
+        <div class="hero-contact-row">
+          <a href="#" class="pill-btn whatsapp-cta" id="heroWhatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0012.05 4a7.94 7.94 0 00-6.9 11.9L4 20l4.24-1.1a7.9 7.9 0 003.8 1h.01a7.94 7.94 0 007.94-7.94 7.9 7.9 0 00-2.4-5.63zm-5.55 12.2a6.6 6.6 0 01-3.36-.92l-.24-.14-2.5.66.67-2.44-.16-.25a6.62 6.62 0 1112.28-3.5 6.63 6.63 0 01-6.7 6.6zm3.63-4.95c-.2-.1-1.17-.58-1.35-.64-.18-.07-.31-.1-.45.1-.13.2-.5.64-.62.77-.11.13-.23.14-.42.05a5.4 5.4 0 01-1.6-.99 6 6 0 01-1.1-1.37c-.12-.2 0-.3.09-.4.09-.1.2-.23.3-.35.1-.12.13-.2.2-.33.06-.13.03-.25-.02-.35-.05-.1-.45-1.08-.61-1.48-.16-.39-.33-.33-.45-.34h-.38c-.13 0-.35.05-.53.25-.18.2-.7.68-.7 1.66 0 .98.72 1.93.82 2.06.1.13 1.4 2.15 3.4 3 .47.2.85.33 1.14.42.48.15.91.13 1.26.08.38-.06 1.17-.48 1.34-.94.16-.46.16-.86.11-.94-.05-.09-.18-.14-.38-.24z"/></svg>
+            WhatsApp
+          </a>
+          <a href="tel:+918668070454" class="pill-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            8668070454
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="10" data-suffix="+">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="100" data-suffix="%">0</span>
+            <span class="stat-label">Responsive</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num-text">Fast &amp;<br>Secure</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num-text">Business<br>Focused</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-3d" data-reveal>
+        <div id="hero-canvas-wrap">
+          <canvas id="hero-canvas"></canvas>
+        </div>
+        <!-- floating UI chips around the 3D scene -->
+        <div class="float-chip chip-1">
+          <span class="chip-dot"></span> Live Preview
+        </div>
+        <div class="float-chip chip-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          SEO Ready
+        </div>
+        <div class="float-chip chip-3">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Mobile First
+        </div>
+        <div class="float-card-3d">
+          <div class="mini-browser">
+            <div class="mini-browser-bar"><span></span><span></span><span></span></div>
+            <div class="mini-browser-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-cue-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE strip ===== -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Business Websites</span><span class="dot">◆</span>
+      <span>E-Commerce</span><span class="dot">◆</span>
+      <span>Landing Pages</span><span class="dot">◆</span>
+      <span>SEO Setup</span><span class="dot">◆</span>
+      <span>WhatsApp Integration</span><span class="dot">◆</span>
+      <span>Domain &amp; Hosting</span><span class="dot">◆</span>
+      <span>Business Websites</span><span class="dot">◆</span>
+      <span>E-Commerce</span><span class="dot">◆</span>
+      <span>Landing Pages</span><span class="dot">◆</span>
+      <span>SEO Setup</span><span class="dot">◆</span>
+      <span>WhatsApp Integration</span><span class="dot">◆</span>
+      <span>Domain &amp; Hosting</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>About Tamil Web App</p>
+        <h2 class="section-title">Why <span class="gradient-text">Tamil Web App?</span></h2>
+        <p class="section-desc">நாங்கள் உங்கள் business-க்கு வெறும் ஒரு website கொடுப்பது இல்லை — search-ல் தெரியும், நம்பகமான, விரைவாக load ஆகும் ஒரு complete digital presence-ஐ உருவாக்குகிறோம். Small businesses முதல் startups வரை, ஒவ்வொரு project-யும் தனிப்பட்ட கவனத்துடன் கட்டமைக்கிறோம்.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-feature-grid" data-reveal>
+          <div class="feature-card-3d">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <h3>Modern Design</h3>
+            <p>Trend-ஆன, தனித்துவமான UI — templates இல்லை.</p>
+          </div>
+          <div class="feature-card-3d">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+            <h3>Mobile Responsive</h3>
+            <p>எல்லா devices-லும் perfect-ஆ வேலை செய்யும்.</p>
+          </div>
+          <div class="feature-card-3d">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <h3>Fast Loading</h3>
+            <p>Optimized code — visitors காத்திருக்க மாட்டார்கள்.</p>
+          </div>
+          <div class="feature-card-3d">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+            <h3>SEO Friendly</h3>
+            <p>Google-ல் business easy-ஆ கண்டுபிடிக்கப்படும்.</p>
+          </div>
+          <div class="feature-card-3d">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M20.5 7.4A9 9 0 105 20.5L3 21l.6-2A9 9 0 0020.5 7.4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <h3>WhatsApp Integration</h3>
+            <p>Enquiries நேரடியாக WhatsApp-க்கு வரும்.</p>
+          </div>
+          <div class="feature-card-3d">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <h3>Google Search Setup</h3>
+            <p>Search Console &amp; Maps listing உடன் setup.</p>
+          </div>
+          <div class="feature-card-3d">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <h3>Secure Hosting</h3>
+            <p>Reliable hosting &amp; SSL setup நாங்களே செய்வோம்.</p>
+          </div>
+          <div class="feature-card-3d">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21c4.97-3 8-6.5 8-11a8 8 0 10-16 0c0 4.5 3.03 8 8 11z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <h3>Professional Support</h3>
+            <p>Launch-க்கு பிறகும் support தொடரும்.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>What We Build</p>
+        <h2 class="section-title">Services designed to <span class="gradient-text">convert visitors</span></h2>
+        <p class="section-desc">உங்கள் business type-க்கு தகுந்த website solution — simple landing page முதல் full e-commerce store வரை.</p>
+      </div>
+
+      <div class="services-grid" id="servicesGrid"><!-- injected by script.js from CONFIG.services --></div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Our Work</p>
+        <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">Demo projects காட்டப்பட்டுள்ளன — உங்கள் real client work-ஐ <code>config.js</code>&nbsp;file-ல் easy-ஆ replace செய்யலாம்.</p>
+      </div>
+
+      <div class="portfolio-filters" id="portfolioFilters">
+        <button class="filter-chip active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="Business">Business</button>
+        <button class="filter-chip" data-filter="E-Commerce">E-Commerce</button>
+        <button class="filter-chip" data-filter="Portfolio">Portfolio</button>
+        <button class="filter-chip" data-filter="Landing Page">Landing Page</button>
+      </div>
+
+      <div class="portfolio-track-wrap">
+        <div class="portfolio-track" id="portfolioTrack"><!-- injected by script.js --></div>
+      </div>
+      <p class="drag-hint">← drag to explore →</p>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PROJECT ===== -->
+  <section class="section featured" id="featured">
+    <div class="container">
+      <div class="featured-card" data-reveal>
+        <div class="featured-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Featured Case Study</p>
+          <h2 class="section-title">Sri Lakshmi Silks<br><span class="gradient-text">E-Commerce Rebuild</span></h2>
+
+          <div class="featured-block">
+            <span class="featured-label">Challenge</span>
+            <p>பழைய website slow-ஆ இருந்தது, mobile-ல் சரியா வேலை செய்யவில்லை, Google-லும் தெரியவில்லை.</p>
+          </div>
+          <div class="featured-block">
+            <span class="featured-label">Solution</span>
+            <p>Fully responsive redesign, WhatsApp-based ordering, image optimization மற்றும் complete on-page SEO setup.</p>
+          </div>
+          <div class="featured-block">
+            <span class="featured-label">Result</span>
+            <p>Load time 70% குறைந்தது, mobile enquiries 3x அதிகரித்தது, Google-ல் top results-ல் தோன்றத் தொடங்கியது.</p>
+          </div>
+
+          <a href="#portfolio" class="btn btn-primary magnetic"><span>View Case Study</span></a>
+        </div>
+
+        <div class="featured-visual">
+          <div class="featured-laptop">
+            <div class="laptop-screen">
+              <div class="laptop-browser-bar"><span></span><span></span><span></span></div>
+              <div class="laptop-content">
+                <div class="lc-hero"></div>
+                <div class="lc-row"><div class="lc-card"></div><div class="lc-card"></div><div class="lc-card"></div></div>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>How We Work</p>
+        <h2 class="section-title">Our <span class="gradient-text">Process</span></h2>
+        <p class="section-desc">Enquiry முதல் launch வரை, ஒரு தெளிவான 6-step journey.</p>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline-line" aria-hidden="true"><span class="timeline-line-fill"></span></div>
+
+        <div class="timeline-item" data-reveal>
+          <span class="timeline-num">01</span>
+          <div class="timeline-content"><h3>Understand</h3><p>We understand the customer's business and requirements.</p></div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <span class="timeline-num">02</span>
+          <div class="timeline-content"><h3>Plan</h3><p>We plan the structure, design and content.</p></div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <span class="timeline-num">03</span>
+          <div class="timeline-content"><h3>Design</h3><p>We create a modern and professional UI.</p></div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <span class="timeline-num">04</span>
+          <div class="timeline-content"><h3>Develop</h3><p>We build the responsive website.</p></div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <span class="timeline-num">05</span>
+          <div class="timeline-content"><h3>Launch</h3><p>We connect domain, hosting and publish the website.</p></div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <span class="timeline-num">06</span>
+          <div class="timeline-content"><h3>Support</h3><p>We provide post-launch support and guidance.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="why-card">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>The Difference</p>
+          <h2 class="section-title">Why businesses <span class="gradient-text">choose us</span></h2>
+        </div>
+        <div class="why-grid" data-reveal>
+          <div class="why-item"><span class="why-check">✓</span>Professional Design</div>
+          <div class="why-item"><span class="why-check">✓</span>Mobile Friendly</div>
+          <div class="why-item"><span class="why-check">✓</span>Fast Loading</div>
+          <div class="why-item"><span class="why-check">✓</span>SEO Friendly</div>
+          <div class="why-item"><span class="why-check">✓</span>WhatsApp Integration</div>
+          <div class="why-item"><span class="why-check">✓</span>Google Visibility Setup</div>
+          <div class="why-item"><span class="why-check">✓</span>Affordable Pricing</div>
+          <div class="why-item"><span class="why-check">✓</span>Personal Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Client Love</p>
+        <h2 class="section-title">What our <span class="gradient-text">clients say</span></h2>
+        <p class="section-desc">Demo reviews shown below — replace with real feedback in <code>config.js</code>.</p>
+      </div>
+      <div class="reviews-grid" id="reviewsGrid"><!-- injected --></div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Simple Pricing</p>
+        <h2 class="section-title">Plans for every <span class="gradient-text">stage of growth</span></h2>
+        <p class="section-desc">Exact-ஆன final price project scope-க்கு ஏற்ப மாறும் — இது ஒரு starting guide.</p>
+      </div>
+      <div class="pricing-grid" id="pricingGrid"><!-- injected --></div>
+      <p class="pricing-note">Custom requirement-ஆ? <a href="#contact">Get a Free Quote →</a></p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq" id="faq">
+    <div class="container container-narrow">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Questions</p>
+        <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+      </div>
+      <div class="faq-list" id="faqList"><!-- injected --></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="contact-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Let's Talk</p>
+        <h2 class="section-title">உங்கள் Business-ஐ Online-ல் <span class="gradient-text">Grow</span> செய்ய Ready-ஆ?</h2>
+        <p class="section-desc">இன்றே உங்கள் Website Project பற்றி பேசலாம்.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form glass-card" id="contactForm" data-reveal novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" required placeholder="Your full name">
+            </div>
+            <div class="field">
+              <label for="cf-business">Business Name</label>
+              <input type="text" id="cf-business" name="business" placeholder="Your business name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-phone">Phone Number</label>
+              <input type="tel" id="cf-phone" name="phone" required placeholder="10-digit mobile number">
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="you@example.com">
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-service">Service Required</label>
+            <select id="cf-service" name="service">
+              <option>Business Website</option>
+              <option>Portfolio Website</option>
+              <option>E-Commerce Website</option>
+              <option>Landing Page</option>
+              <option>Website Redesign</option>
+              <option>SEO &amp; Google Setup</option>
+              <option>Domain &amp; Hosting Setup</option>
+              <option>WhatsApp Business Integration</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" placeholder="உங்கள் requirement பற்றி சொல்லுங்கள்..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary magnetic"><span>Send Enquiry</span></button>
+            <a href="#" class="btn btn-outline magnetic" id="formWhatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0012.05 4a7.94 7.94 0 00-6.9 11.9L4 20l4.24-1.1a7.9 7.9 0 003.8 1h.01a7.94 7.94 0 007.94-7.94 7.9 7.9 0 00-2.4-5.63zm-5.55 12.2a6.6 6.6 0 01-3.36-.92l-.24-.14-2.5.66.67-2.44-.16-.25a6.62 6.62 0 1112.28-3.5 6.63 6.63 0 01-6.7 6.6zm3.63-4.95c-.2-.1-1.17-.58-1.35-.64-.18-.07-.31-.1-.45.1-.13.2-.5.64-.62.77-.11.13-.23.14-.42.05a5.4 5.4 0 01-1.6-.99 6 6 0 01-1.1-1.37c-.12-.2 0-.3.09-.4.09-.1.2-.23.3-.35.1-.12.13-.2.2-.33.06-.13.03-.25-.02-.35-.05-.1-.45-1.08-.61-1.48-.16-.39-.33-.33-.45-.34h-.38c-.13 0-.35.05-.53.25-.18.2-.7.68-.7 1.66 0 .98.72 1.93.82 2.06.1.13 1.4 2.15 3.4 3 .47.2.85.33 1.14.42.48.15.91.13 1.26.08.38-.06 1.17-.48 1.34-.94.16-.46.16-.86.11-.94-.05-.09-.18-.14-.38-.24z"/></svg>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info" data-reveal>
+          <a href="#" class="info-card glass-card" id="infoWhatsapp">
+            <span class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0012.05 4a7.94 7.94 0 00-6.9 11.9L4 20l4.24-1.1a7.9 7.9 0 003.8 1h.01a7.94 7.94 0 007.94-7.94 7.9 7.9 0 00-2.4-5.63z"/></svg>
+            </span>
+            <div><span class="info-label">WhatsApp</span><span class="info-value">+91 86680 70454</span></div>
+          </a>
+          <a href="tel:+918668070454" class="info-card glass-card">
+            <span class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><span class="info-label">Phone</span><span class="info-value">+91 86680 70454</span></div>
+          </a>
+          <a href="mailto:dgowtham429@gmail.com" class="info-card glass-card">
+            <span class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M2 6l10 7 10-7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <div><span class="info-label">Email</span><span class="info-value">dgowtham429@gmail.com</span></div>
+          </a>
+          <div class="info-card glass-card">
+            <span class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/></svg></span>
+            <div><span class="info-label">Location</span><span class="info-value">Tamil Nadu, India</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 40 40" width="30" height="30"><circle cx="8" cy="8" r="3" fill="currentColor"/><circle cx="20" cy="8" r="3" fill="currentColor" opacity=".6"/><circle cx="32" cy="8" r="3" fill="currentColor" opacity=".3"/><circle cx="8" cy="20" r="3" fill="currentColor" opacity=".6"/><circle cx="20" cy="20" r="4" fill="currentColor"/><circle cx="32" cy="20" r="3" fill="currentColor" opacity=".6"/><circle cx="8" cy="32" r="3" fill="currentColor" opacity=".3"/><circle cx="20" cy="32" r="3" fill="currentColor" opacity=".6"/><circle cx="32" cy="32" r="3" fill="currentColor"/></svg>
+          </span>
+          <span class="logo-text">Tamil<em>Web</em>App</span>
+        </a>
+        <p>Building modern websites for modern businesses.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram" class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook" class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 9h3V5h-3a4 4 0 00-4 4v2H7v4h3v7h4v-7h3l1-4h-4V9a1 1 0 011-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+          <a href="#" aria-label="YouTube" class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M10 9l6 3-6 3V9z" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="WhatsApp" class="social-icon" id="footerWhatsapp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0012.05 4a7.94 7.94 0 00-6.9 11.9L4 20l4.24-1.1a7.9 7.9 0 003.8 1h.01a7.94 7.94 0 007.94-7.94 7.9 7.9 0 00-2.4-5.63z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Sitemap</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+918668070454">+91 86680 70454</a>
+          <a href="mailto:dgowtham429@gmail.com">dgowtham429@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Tamil Web App. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Floating WhatsApp button ===== -->
+<a href="#" class="whatsapp-float" id="floatWhatsapp" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0012.05 4a7.94 7.94 0 00-6.9 11.9L4 20l4.24-1.1a7.9 7.9 0 003.8 1h.01a7.94 7.94 0 007.94-7.94 7.9 7.9 0 00-2.4-5.63zm-5.55 12.2a6.6 6.6 0 01-3.36-.92l-.24-.14-2.5.66.67-2.44-.16-.25a6.62 6.62 0 1112.28-3.5 6.63 6.63 0 01-6.7 6.6zm3.63-4.95c-.2-.1-1.17-.58-1.35-.64-.18-.07-.31-.1-.45.1-.13.2-.5.64-.62.77-.11.13-.23.14-.42.05a5.4 5.4 0 01-1.6-.99 6 6 0 01-1.1-1.37c-.12-.2 0-.3.09-.4.09-.1.2-.23.3-.35.1-.12.13-.2.2-.33.06-.13.03-.25-.02-.35-.05-.1-.45-1.08-.61-1.48-.16-.39-.33-.33-.45-.34h-.38c-.13 0-.35.05-.53.25-.18.2-.7.68-.7 1.66 0 .98.72 1.93.82 2.06.1.13 1.4 2.15 3.4 3 .47.2.85.33 1.14.42.48.15.91.13 1.26.08.38-.06 1.17-.48 1.34-.94.16-.46.16-.86.11-.94-.05-.09-.18-.14-.38-.24z"/></svg>
+  <span class="whatsapp-float-pulse"></span>
+</a>
+
+<!-- back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
