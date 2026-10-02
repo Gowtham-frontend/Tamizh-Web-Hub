@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin | Tamizh Web Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head><body>
+<section id="login" class="box">
+  <h1>Tamizh Web Hub</h1><p>Admin sign in</p>
+  <form id="loginForm">
+    <input id="em" type="email" placeholder="Email" required autocomplete="username">
+    <input id="pw" type="password" placeholder="Password" required autocomplete="current-password">
+    <button class="btn" type="submit">Sign in</button>
+    <p id="loginMsg" class="err"></p>
+  </form>
+</section>
+
+<section id="app" hidden>
+  <header><b>Tamizh Web Hub Admin</b>
+    <nav><button data-tab="projects" class="tab on">Projects</button><button data-tab="enquiries" class="tab">Enquiries <span id="newCount"></span></button><button id="logout" class="tab">Sign out</button></nav>
+  </header>
+
+  <div id="projects" class="pane">
+    <form id="pForm" class="card">
+      <h2 id="pTitle">Add project</h2>
+      <input type="hidden" id="pId">
+      <div class="row">
+        <label>Project name<input id="title" required></label>
+        <label>Industry<input id="industry"></label>
+      </div>
+      <label>Description<textarea id="description" rows="2"></textarea></label>
+      <div class="row">
+        <label>Website link<input id="url" type="url" placeholder="https://"></label>
+        <label>Preview image link<input id="image_url" type="url" placeholder="https://"></label>
+      </div>
+      <div class="row">
+        <label>Display order<input id="sort_order" type="number" value="0"></label>
+        <label class="chk"><input id="published" type="checkbox" checked> Show on website</label>
+      </div>
+      <div class="actions"><button class="btn" type="submit">Save project</button><button class="btn ghost" type="button" id="pCancel">Clear</button></div>
+      <p id="pMsg"></p>
+    </form>
+    <div id="pList"></div>
+  </div>
+
+  <div id="enquiries" class="pane" hidden><div id="eList"></div></div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../js/config.js"></script>
+<script src="admin.js"></script>
+</body></html>
