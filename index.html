@@ -9,20 +9,22 @@
 <meta property="og:title" content="Tamizh Web Hub | Business Web Solutions">
 <meta property="og:description" content="We build digital experiences that grow businesses.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://tamizhwebhub.com/images/logo-dark.png">
+<meta property="og:url" content="https://tamizhwebhub.com/">
 <meta name="theme-color" content="#050505">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-<!-- Favicons (root-absolute so Google can always find them) -->
-<link rel="icon" href="images/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48x48.png">
-<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
-<meta property="og:image" content="https://tamizhwebhub.com/images/logo-dark.png">
-<meta property="og:url" content="https://tamizhwebhub.com/">
+
+<!-- Favicons (root-absolute so Google and all pages resolve them) -->
+<link rel="icon" href="favicon.ico?v=3" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=3">
+<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48x48.png?v=3">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=3">
+<link rel="manifest" href="site.webmanifest?v=3">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,14 +33,21 @@
 <div id="cursor"></div>
 
 <header id="nav">
-  <a href="#home" class="logo" style="display:flex;align-items:center;gap:10px"><img src="images/logo-icon.svg" alt="" width="34" height="34">Tamizh<b>Web</b>Hub</a>
-  <button id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
-  <nav id="menu">
+  <!-- Inline SVG logo: no external file, so it can never show a broken image -->
+  <a href="#home" class="logo" style="display:flex;align-items:center;gap:10px" aria-label="Tamizh Web Hub home">
+    <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <rect x="1" y="1" width="32" height="32" rx="8" fill="#050505" stroke="#ff6a00" stroke-width="2"/>
+      <path d="M9 10h16M17 10v15" stroke="#ff6a00" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    </svg>
+    <span>Tamizh <b>Web</b> Hub</span>
+  </a>
+  <button id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu" aria-label="Main navigation">
     <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
-<main>      
+<main>
 <section id="home" class="hero">
   <canvas id="sphere" aria-hidden="true"></canvas>
   <div class="hero-in">
@@ -76,6 +85,7 @@
   <div class="wrap">
     <h2 class="reveal">SERVICES</h2>
     <div class="grid" id="serviceGrid"></div>
+    <noscript><p>Website design, development, and SEO services for businesses in Tamil Nadu.</p></noscript>
   </div>
 </section>
 
@@ -83,6 +93,7 @@
   <div class="wrap">
     <h2 class="reveal">SELECTED WORKS</h2>
     <div class="works" id="works"></div>
+    <noscript><p>Please enable JavaScript to view our portfolio.</p></noscript>
   </div>
 </section>
 
@@ -90,8 +101,12 @@
   <div class="wrap">
     <h2 class="reveal">WHY BUSINESSES CHOOSE TAMIZH WEB HUB</h2>
     <ul class="why">
-      <li class="reveal">Modern &amp; Creative Design</li><li class="reveal">Mobile-Friendly Websites</li><li class="reveal">Affordable Business Solutions</li>
-      <li class="reveal">User-Friendly Experience</li><li class="reveal">Reliable Support</li><li class="reveal">Customized Website Solutions</li>
+      <li class="reveal">Modern &amp; Creative Design</li>
+      <li class="reveal">Mobile-Friendly Websites</li>
+      <li class="reveal">Affordable Business Solutions</li>
+      <li class="reveal">User-Friendly Experience</li>
+      <li class="reveal">Reliable Support</li>
+      <li class="reveal">Customized Website Solutions</li>
     </ul>
   </div>
 </section>
@@ -116,19 +131,20 @@
       <p class="reveal">Your business deserves a powerful digital presence. Let's make it happen.</p>
       <p class="meta reveal">Founder: Gowtham D<br>Business: Tamizh Web Hub<br>Email: <a id="mailLink" href="mailto:dgowtham429@gmail.com">dgowtham429@gmail.com</a><br>Location: Tamil Nadu, India</p>
       <div class="cta">
-        <a id="waBtn" class="btn primary magnetic" target="_blank" rel="noopener">WhatsApp Enquiry</a>
-        <a id="mailBtn" class="btn ghost magnetic">Email Us</a>
+        <!-- main.js should overwrite this href with your wa.me link; #contact is a safe fallback -->
+        <a id="waBtn" class="btn primary magnetic" href="#contact" target="_blank" rel="noopener noreferrer">WhatsApp Enquiry</a>
+        <a id="mailBtn" class="btn ghost magnetic" href="mailto:dgowtham429@gmail.com">Email Us</a>
       </div>
     </div>
     <form id="form" class="glass" novalidate>
       <label>Name<input name="name" required autocomplete="name"></label>
       <label>Email<input name="email" type="email" autocomplete="email"></label>
       <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
-      <label>Business Name<input name="business"></label>
+      <label>Business Name<input name="business" autocomplete="organization"></label>
       <label>Website Requirements<input name="requirements" placeholder="e.g. 5-page business site"></label>
       <label>Message<textarea name="message" rows="4"></textarea></label>
       <button class="btn primary" type="submit">Discuss My Project</button>
-      <p id="formMsg" role="status"></p>
+      <p id="formMsg" role="status" aria-live="polite"></p>
     </form>
   </div>
 </section>
@@ -136,8 +152,10 @@
 
 <footer>
   <div class="wrap">
-    <h3>TAMIZH WEB HUB</h3><p>Business Web Solutions</p><p><em>Building Digital Experiences. Growing Businesses.</em></p>
-    <nav><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#contact">Contact</a></nav>
+    <h3>TAMIZH WEB HUB</h3>
+    <p>Business Web Solutions</p>
+    <p><em>Building Digital Experiences. Growing Businesses.</em></p>
+    <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#contact">Contact</a></nav>
     <small>Copyright &copy; 2026 Tamizh Web Hub.</small>
   </div>
 </footer>
