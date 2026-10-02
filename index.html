@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<meta property="og:image" content="/images/logo-dark.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,14 +22,14 @@
 <div id="cursor"></div>
 
 <header id="nav">
-  <a href="#home" class="logo">Tamizh<b>Web</b>Hub</a>
+  <a href="#home" class="logo" style="display:flex;align-items:center;gap:10px"><img src="/images/logo-icon.svg" alt="" width="34" height="34">Tamizh<b>Web</b>Hub</a>
   <button id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   <nav id="menu">
     <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
-<main>
+<main>      
 <section id="home" class="hero">
   <canvas id="sphere" aria-hidden="true"></canvas>
   <div class="hero-in">
