@@ -13,8 +13,8 @@
   }
   $('#loginForm').onsubmit = async e => {
     e.preventDefault();
-    const { error } = await sb.auth.signInWithPassword({ email: $('#em').value, password: $('#pw').value });
-    if (error) $('#loginMsg').textContent = 'Sign in failed. Check your email and password.'; else show();
+    const { error } = await sb.auth.signInWithPassword({ email: $('#em').value.trim(), password: $('#pw').value });
+    if (error) $('#loginMsg').textContent = 'Sign in failed: ' + error.message; else show();
   };
   $('#logout').onclick = async () => { await sb.auth.signOut(); show(); };
 
