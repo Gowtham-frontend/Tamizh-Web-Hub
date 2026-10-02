@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tamizh Web Hub | Business Web Solutions, Tamil Nadu</title>
+<meta name="description" content="Tamizh Web Hub is a Tamil Nadu web design studio building modern, responsive websites for small businesses, startups and companies.">
+<meta property="og:title" content="Tamizh Web Hub | Business Web Solutions">
+<meta property="og:description" content="We build digital experiences that grow businesses.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#050505">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader"><span>TAMIZH WEB HUB</span><i></i></div>
+<div id="progress"></div>
+<div id="cursor"></div>
+
+<header id="nav">
+  <a href="#home" class="logo">Tamizh<b>Web</b>Hub</a>
+  <button id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <canvas id="sphere" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <p class="kicker">TAMIZH WEB HUB</p>
+    <h1><span class="line">WE BUILD DIGITAL</span><span class="line">EXPERIENCES THAT</span><span class="line">GROW BUSINESSES.</span></h1>
+    <p class="sub">Creative Websites. Powerful Digital Experiences. Business Growth.</p>
+    <div class="cta">
+      <a href="#work" class="btn primary magnetic">Explore Our Work</a>
+      <a href="#contact" class="btn ghost magnetic">Start Your Project</a>
+    </div>
+  </div>
+  <div class="float f1">Responsive<small>Mobile ready</small></div>
+  <div class="float f2">SEO<small>Search friendly</small></div>
+  <div class="scroll"><i></i>Scroll</div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap two">
+    <div>
+      <h2 class="reveal">WE TURN IDEAS INTO DIGITAL REALITY.</h2>
+      <p class="reveal">Tamizh Web Hub is a creative web design studio focused on building modern, responsive, and professional websites that help businesses establish their digital identity.</p>
+      <p class="reveal">We combine creative design, modern technology, and user-focused experiences to create websites that make businesses stand out.</p>
+      <p class="meta reveal">Founder: Gowtham D &nbsp;|&nbsp; Tamil Nadu, India &nbsp;|&nbsp; Business Web Solutions</p>
+    </div>
+    <div class="stats">
+      <!-- Editable placeholders: change data-count values to your verified figures -->
+      <div class="glass reveal"><b data-count="4" data-suffix="+">0</b><span>Projects delivered</span></div>
+      <div class="glass reveal"><b data-count="100" data-suffix="%">0</b><span>Mobile responsive</span></div>
+      <div class="glass reveal"><b data-count="5" data-suffix="">0</b><span>Step process</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="sec dark">
+  <div class="wrap">
+    <h2 class="reveal">SERVICES</h2>
+    <div class="grid" id="serviceGrid"></div>
+  </div>
+</section>
+
+<section id="work" class="sec">
+  <div class="wrap">
+    <h2 class="reveal">SELECTED WORKS</h2>
+    <div class="works" id="works"></div>
+  </div>
+</section>
+
+<section id="why" class="sec dark">
+  <div class="wrap">
+    <h2 class="reveal">WHY BUSINESSES CHOOSE TAMIZH WEB HUB</h2>
+    <ul class="why">
+      <li class="reveal">Modern &amp; Creative Design</li><li class="reveal">Mobile-Friendly Websites</li><li class="reveal">Affordable Business Solutions</li>
+      <li class="reveal">User-Friendly Experience</li><li class="reveal">Reliable Support</li><li class="reveal">Customized Website Solutions</li>
+    </ul>
+  </div>
+</section>
+
+<section id="process" class="sec">
+  <div class="wrap">
+    <h2 class="reveal">OUR PROCESS</h2>
+    <ol class="timeline">
+      <li><b>01</b><h3>DISCOVER</h3><p>Understand the business.</p></li>
+      <li><b>02</b><h3>PLAN</h3><p>Build the website strategy.</p></li>
+      <li><b>03</b><h3>DESIGN</h3><p>Create a modern UI/UX.</p></li>
+      <li><b>04</b><h3>DEVELOP</h3><p>Develop responsive websites.</p></li>
+      <li><b>05</b><h3>LAUNCH</h3><p>Deploy and deliver the website.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="sec dark">
+  <div class="wrap two">
+    <div>
+      <h2 class="reveal">LET'S BUILD SOMETHING AMAZING.</h2>
+      <p class="reveal">Your business deserves a powerful digital presence. Let's make it happen.</p>
+      <p class="meta reveal">Founder: Gowtham D<br>Business: Tamizh Web Hub<br>Email: <a id="mailLink" href="mailto:dgowtham429@gmail.com">dgowtham429@gmail.com</a><br>Location: Tamil Nadu, India</p>
+      <div class="cta">
+        <a id="waBtn" class="btn primary magnetic" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+        <a id="mailBtn" class="btn ghost magnetic">Email Us</a>
+      </div>
+    </div>
+    <form id="form" class="glass" novalidate>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" autocomplete="email"></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+      <label>Business Name<input name="business"></label>
+      <label>Website Requirements<input name="requirements" placeholder="e.g. 5-page business site"></label>
+      <label>Message<textarea name="message" rows="4"></textarea></label>
+      <button class="btn primary" type="submit">Discuss My Project</button>
+      <p id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>TAMIZH WEB HUB</h3><p>Business Web Solutions</p><p><em>Building Digital Experiences. Growing Businesses.</em></p>
+    <nav><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#contact">Contact</a></nav>
+    <small>Copyright &copy; 2026 Tamizh Web Hub.</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
